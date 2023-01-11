@@ -1,0 +1,36 @@
+   An Object is a collection of values i.e., it aggregates Multiple values and allows us to store 
+and retrieve those values by name. An Object in JavaScript may be defined as an unordered 
+collection of related data,of primitive or reference types, in the form of “key:value” pairs. 
+
+   The keys can be variables (or) functions and are called properties and methods respectively, 
+in the context of an object.
+
+OBJECTS and its INTERNAL REPRESENTATION IN JAVASCRIPT
+
+      Objects are different from primitive datatypes (i.e. number, string, boolean, etc.). The
+Primitive data types contain one value but Objects can hold many values in form of " Key: value " 
+pair. These keys can be variables or functions and are called properties and methods as mentioned above.
+
+    Every object has some property associated with some value. These values can be accessed using these 
+properties associated with them.
+
+    An Object can have a property that is itself another object.For Example
+        function a(x,y,z) {
+            this.a = a;
+            this.b = b;
+            this.c = c;
+        }
+        var n1 = new a(1.2.3);
+        var n2 = new a(4,5,6);
+    
+    The properties of an Object define the characteristics of the object. For Example
+        var car = {
+            MadeBy:"COMPANY NAME";
+            Model:"MODEL NAME";
+            Year:"YEAR OF MANUFACTURE";
+        };
+    The properties of an object can be accessed by its property name as follows
+    SYNTAX: "expression.identifier"
+      Example:  car.MadeBy;   // COMPANY NAME
+    SYNTAX: "expression[expression]"
+      Example:  car['Model']; // MODEL NAME
